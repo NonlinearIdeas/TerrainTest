@@ -275,6 +275,7 @@ void MainScene::TapDragPinchInputTap(const TOUCH_DATA_T& point)
    // Get the position in the physics engine.
    Viewport& vp = Viewport::Instance();
    Vec2 posPhysics = vp.Convert(point.pos);
+   
    // Create an AABB around the point.
    AABB aabb;
    Vec2 bound(0.5,0.5);
